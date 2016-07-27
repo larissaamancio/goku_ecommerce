@@ -23,17 +23,20 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.5'
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-activemodel-mocks'
+
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'capybara'
+  gem 'shoulda-matchers', '~> 3.1', require: false
 end
 
 
 group :development do
   gem 'web-console', '~> 2.0'
-
   gem 'spring'
 end
 
